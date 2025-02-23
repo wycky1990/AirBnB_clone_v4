@@ -16,7 +16,7 @@ cors = CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
 
 @app.teardown_appcontext
 def close_db(error):
-    """ Close Storage """
+    """ Storage closed """
     storage.close()
 
 

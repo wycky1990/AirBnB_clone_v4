@@ -11,7 +11,7 @@ from flasgger.utils import swag_from
 @swag_from('documentation/user/all_users.yml')
 def get_users():
     """
-    Retrieves the list of all user objects
+    Retrieves list of all user objects
     or a specific user
     """
     all_users = storage.all(User).values()

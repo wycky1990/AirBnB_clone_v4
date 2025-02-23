@@ -14,7 +14,7 @@ from flasgger.utils import swag_from
 @swag_from('documentation/reviews/get_reviews.yml', methods=['GET'])
 def get_reviews(place_id):
     """
-    Retrieves the list of all Review objects of a Place
+    Retrieves list of all Review objects of a Place
     """
     place = storage.get(Place, place_id)
 

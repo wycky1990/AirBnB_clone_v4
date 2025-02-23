@@ -11,7 +11,7 @@ from flasgger.utils import swag_from
 @swag_from('documentation/state/get_state.yml', methods=['GET'])
 def get_states():
     """
-    Retrieves the list of all State objects
+    Retrieves list of all State objects
     """
     all_states = storage.all(State).values()
     list_states = []

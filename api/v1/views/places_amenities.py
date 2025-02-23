@@ -15,7 +15,7 @@ from flasgger.utils import swag_from
            methods=['GET'])
 def get_place_amenities(place_id):
     """
-    Retrieves the list of all Amenity objects of a Place
+    Retrieves list of all Amenity objects of a Place
     """
     place = storage.get(Place, place_id)
 

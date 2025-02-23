@@ -16,7 +16,7 @@ from flasgger.utils import swag_from
 @swag_from('documentation/place/get_places.yml', methods=['GET'])
 def get_places(city_id):
     """
-    Retrieves the list of all Place objects of a City
+    Retrieves list of all Place objects of a City
     """
     city = storage.get(City, city_id)
 
